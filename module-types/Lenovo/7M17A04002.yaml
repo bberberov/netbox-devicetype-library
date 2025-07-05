@@ -1,0 +1,12 @@
+---
+# Status: WIP, alpha
+manufacturer: Lenovo
+model: ThinkSystem SD530 Front VGA/USB KVM Breakout Module
+part_number: 7M17A04002
+console-ports:
+  - name: KVM Dongle
+    type: other
+  - name: USB 3.0
+    type: usb-a
+  - name: XClarity Mobile
+    type: usb-c

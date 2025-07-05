@@ -5,13 +5,29 @@ slug: lenovo-thinksystem-sr630
 part_number: 7X02
 u_height: 1
 is_full_depth: true
-subdevice_role: parent
+airflow: front-to-rear
+weight: 41.4
+weight_unit: lb
+# description: Lenovo ThinkSystem SR630 Server (Xeon SP Gen 1 / Gen 2)
+comments: |
+  Documentation
+
+  - Lenovo Press
+    - [Product Guide](https://lenovopress.lenovo.com/lp1049-thinksystem-sr630-server)
 interfaces:
   - name: XCC
     type: 1000base-t
     mgmt_only: true
-power-ports:
-  - name: PSU0
-    type: iec-60320-c14
-  - name: PSU1
-    type: iec-60320-c14
+module-bays:
+  - name: LOM slot
+    position: LOM
+  - name: PCIe slot 1 (LP, x8)
+    position: Slot 1
+  - name: PCIe slot 2 (LP or FH/HL, x8 or x16)
+    position: Slot 2
+  - name: PCIe slot 3 (LP, x16 or N/A)
+    position: Slot 3
+  - name: Power Supply 1
+    position: PS1
+  - name: Power Supply 2
+    position: PS2

@@ -1,0 +1,12 @@
+---
+# Status: WIP, alpha
+manufacturer: Lenovo
+model: ThinkSystem Mellanox ConnectX-6 HDR100/100GbE QSFP56 2-port PCIe VPI Adapter
+part_number: 4C57A14178
+interfaces:
+  - name: '{module}: Mellanox ConnectX-6 port 1'
+    type: infiniband-hdr
+    mgmt_only: false
+  - name: '{module}: Mellanox ConnectX-6 port 2'
+    type: infiniband-hdr
+    mgmt_only: false

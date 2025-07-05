@@ -1,0 +1,10 @@
+---
+# Status: WIP, alpha
+manufacturer: Lenovo
+model: Intel XXV710-DA2 10/25GbE SFP28 2-Port PCIe Low Profile Ethernet Adapter
+part_number: 7XC7A05523
+interfaces:
+  - name: '{module}: Intel XXV710 port 1'
+    type: 25gbase-x-sfp28
+  - name: '{module}: Intel XXV710 port 2'
+    type: 25gbase-x-sfp28

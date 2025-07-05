@@ -1,0 +1,10 @@
+---
+# Status: WIP, alpha
+manufacturer: Dell
+model: Broadcom 57414 Dual Port 10/25GbE OCP 3.0 Ethernet Adapter
+part_number: KHCTP
+interfaces:
+  - name: '{module}: Broadcom 57414 port 1'
+    type: 25gbase-x-sfp28
+  - name: '{module}: Broadcom 57414 port 2'
+    type: 25gbase-x-sfp28

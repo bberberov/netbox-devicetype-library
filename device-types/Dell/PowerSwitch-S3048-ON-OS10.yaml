@@ -1,30 +1,31 @@
 ---
+# Status: WIP, alpha
 manufacturer: Dell
-model: PowerSwitch N3248TE-ON
-slug: dell-powerswitch-n3248te-on
+model: PowerSwitch S3048-ON (OS10)
+slug: dell-powerswitch-s3048-on-os10
 u_height: 1
 is_full_depth: true
 # airflow: rear-to-front and front-to-rear available
-weight: 20.15
-weight_unit: lb
+weight: 6.74
+weight_unit: kg
 # description:
 comments: |
   Documentation
 
-  - [Product Support page](https://www.dell.com/support/home/en-us/product-support/product/networking-n3200-series/overview)
-  - [Dell PowerSwitch N3200-ON Series Switches Specification Sheet](https://www.delltechnologies.com/asset/en-us/products/networking/technical-support/dell-networking-n3200-powerswitch-specsheet.pdf) (PDF)
+  - [Product Support page](https://www.dell.com/support/home/en-us/product-support/product/networking-n3000-series/overview)
+  - [Dell-S3048-ON-Spec-Sheet.pdf](https://i.dell.com/sites/csdocuments/Shared-Content_data-Sheets_Documents/en/us/Dell-S3048-ON-Spec-Sheet.pdf)
 console-ports:
   - name: Console
     type: rj-45
 power-ports:
   - name: PS1
     type: iec-60320-c14
-    maximum_draw: 550
-    allocated_draw: 212
+    maximum_draw: 424
+    allocated_draw: 200
   - name: PS2
     type: iec-60320-c14
-    maximum_draw: 550
-    allocated_draw: 212
+    maximum_draw: 424
+    allocated_draw: 200
 interfaces:
   - name: Ethernet 1/1/1
     type: 1000base-t
@@ -130,10 +131,6 @@ interfaces:
     type: 10gbase-x-sfpp
   - name: Ethernet 1/1/52
     type: 10gbase-x-sfpp
-  - name: Ethernet 1/1/53
-    type: 100gbase-x-qsfp28
-  - name: Ethernet 1/1/54
-    type: 100gbase-x-qsfp28
   - name: Management 1/1/1
     type: 1000base-t
     mgmt_only: true

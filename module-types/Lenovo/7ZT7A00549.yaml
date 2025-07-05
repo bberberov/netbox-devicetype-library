@@ -1,0 +1,14 @@
+---
+# Status: WIP, alpha
+manufacturer: Lenovo
+model: ThinkSystem 10Gb 4-port Base-T LOM Ethernet Adapter
+part_number: 7ZT7A00549
+interfaces:
+  - name: '{module}: Intel X722 port 1'
+    type: 10gbase-t
+  - name: '{module}: Intel X722 port 2'
+    type: 10gbase-t
+  - name: '{module}: Intel X722 port 3'
+    type: 10gbase-t
+  - name: '{module}: Intel X722 port 4'
+    type: 10gbase-t

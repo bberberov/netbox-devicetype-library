@@ -2,18 +2,21 @@
 manufacturer: Dell
 model: PowerSwitch S4148T-ON
 slug: dell-powerswitch-s4148t-on
-part_number: S4148T-ON
+part_number: PR8JH
 u_height: 1
 is_full_depth: true
-comments: '[dell-networking-s4100-series-spec-sheet.pdf](https://www.delltechnologies.com/asset/en-us/products/networking/technical-support/dell-networking-s4100-series-spec-sheet.pdf)'
+# airflow: rear-to-front and front-to-rear available
+weight: 20.15
+weight_unit: lb
+# description: 48-port 10Gbase-T Ethernet Switch with 4 100Gbps QSFP28 and 2 40Gbps QSFP+ ports
+comments: |
+  Documentation
+
+  - [Product Support page](https://www.dell.com/support/home/en-us/product-support/product/networking-s4148f-on/overview)
+  - [Dell PowerSwitch S4100-ON Specification Sheet](https://www.delltechnologies.com/asset/en-us/products/networking/technical-support/dell-networking-s4100-series-spec-sheet.pdf) (PDF)
 console-ports:
   - name: Console
     type: rj-45
-power-ports:
-  - name: PS1
-    type: iec-60320-c14
-  - name: PS2
-    type: iec-60320-c14
 interfaces:
   - name: Ethernet 1/1/5
     type: 10gbase-t
@@ -112,3 +115,10 @@ interfaces:
   - name: Management 1/1/1
     type: 1000base-t
     mgmt_only: true
+power-ports:
+  - name: PS1
+    type: iec-60320-c14
+    # maximum_draw:
+  - name: PS2
+    type: iec-60320-c14
+    # maximum_draw:

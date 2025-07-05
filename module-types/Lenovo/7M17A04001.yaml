@@ -1,0 +1,55 @@
+---
+# Status: WIP, alpha
+manufacturer: Lenovo
+model: ThinkSystem D2 10Gb 8 port EIOM Base T RJ45
+part_number: 7M17A04001
+front-ports:
+  - name: EIOM port 1
+    type: 8p8c
+    label: Node 4 port 2
+    rear_port: Node 4 port 2
+  - name: EIOM port 2
+    type: 8p8c
+    label: Node 2 port 2
+    rear_port: Node 2 port 2
+  - name: EIOM port 3
+    type: 8p8c
+    label: Node 4 port 1
+    rear_port: Node 4 port 1
+  - name: EIOM port 4
+    type: 8p8c
+    label: Node 2 port 1
+    rear_port: Node 2 port 1
+  - name: EIOM port 5
+    type: 8p8c
+    label: Node 3 port 2
+    rear_port: Node 3 port 2
+  - name: EIOM port 6
+    type: 8p8c
+    label: Node 1 port 2
+    rear_port: Node 1 port 2
+  - name: EIOM port 7
+    type: 8p8c
+    label: Node 3 port 1
+    rear_port: Node 3 port 1
+  - name: EIOM port 8
+    type: 8p8c
+    label: Node 1 port 1
+    rear_port: Node 1 port 1
+rear-ports:
+  - name: Node 1 port 1
+    type: other
+  - name: Node 1 port 2
+    type: other
+  - name: Node 2 port 1
+    type: other
+  - name: Node 2 port 2
+    type: other
+  - name: Node 3 port 1
+    type: other
+  - name: Node 3 port 2
+    type: other
+  - name: Node 4 port 1
+    type: other
+  - name: Node 4 port 2
+    type: other

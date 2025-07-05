@@ -4,10 +4,31 @@ model: PowerEdge R650
 slug: dell-poweredge-r650
 u_height: 1
 is_full_depth: true
-subdevice_role: parent
+airflow: front-to-rear
+# Maximum weight in the 4 x 3.5" configuration.  Empty weight with no drives 37.5
+weight: 46.7
+weight_unit: lb
+comments: |
+  Documentation
+
+  - [Product Support page](https://www.dell.com/support/home/en-us/product-support/product/poweredge-r650/overview)
+  - [Dell EMC PowerEdge R650 Installation and Service Manual](https://www.dell.com/support/manuals/en-us/poweredge-r650/per650_ism_pub/about-this-document)
+  - [Dell EMC PowerEdge R650 Technical Specifications](https://www.dell.com/support/manuals/en-us/poweredge-r650/per650_ts_pub_ism/technical-specifications)
 console-ports:
   - name: Optional Rear Serial
     type: de-9
+  - name: Front VGA
+    type: other
+  - name: Rear VGA
+    type: other
+  - name: Front USB 2.0
+    type: usb-a
+  - name: Rear USB 2.0
+    type: usb-a
+  - name: Rear USB 3.0
+    type: usb-a
+  - name: iDRAC Direct
+    type: usb-micro-ab
 power-ports:
   - name: Power 1
     type: iec-60320-c14
@@ -16,21 +37,21 @@ power-ports:
     type: iec-60320-c14
     maximum_draw: 800
 interfaces:
-  - name: Gig-E 1
+  - name: 'LOM: Broadcom 5720 port 1'
     type: 1000base-t
-  - name: Gig-E 2
+  - name: 'LOM: Broadcom 5720 port 2'
     type: 1000base-t
   - name: iDRAC9
     type: 1000base-t
     mgmt_only: true
 module-bays:
-  - name: Optional OCP NIC
+  - name: OCP Slot (OCP 3.0)
     position: ocp
   - name: Optional BOSS-2 Removed
     position: boss
-  - name: PCIe-Gen4 1
+  - name: PCIe Gen4 slot 1 (x16)
     position: pcie1
-  - name: Optional PCIe-Gen4 2
+  - name: PCIe Gen4 slot 2 (x8 or x16)
     position: pcie2
-  - name: Optional PCIe-Gen4 3
+  - name: PCIe Gen4 slot 3 (x16)
     position: pcie3

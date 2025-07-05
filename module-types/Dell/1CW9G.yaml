@@ -1,0 +1,9 @@
+---
+# Status: WIP, alpha
+manufacturer: Dell
+model: Rx5x AC Power Supply 1400W Mixed Mode Platinum - 1CW9G
+part_number: 1CW9G
+power-ports:
+  - name: '{module}'
+    type: iec-60320-c14
+    maximum_draw: 1400

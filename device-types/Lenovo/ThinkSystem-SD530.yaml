@@ -1,0 +1,31 @@
+---
+# Status: WIP, alpha
+manufacturer: Lenovo
+model: ThinkSystem SD530
+slug: lenovo-thinksystem-sd530
+part_number: 7X21
+u_height: 0
+is_full_depth: false
+weight: 16.6
+weight_unit: lb
+subdevice_role: child
+# description: Node for ThinkSystem D2 chassis
+comments: |
+  Documentation
+
+  - Lenovo Press
+    - [Product Guide](https://lenovopress.lenovo.com/lp1041-thinksystem-sd530-server-xeon-sp-gen-2)
+interfaces:
+  - name: 'LOM: Intel X722 port 1'
+    type: 10gbase-kx4
+  - name: 'LOM: Intel X722 port 2'
+    type: 10gbase-kx4
+  - name: XCC
+    type: 1000base-kx
+    mgmt_only: true
+module-bays:
+  - name: Optional KVM
+  - name: PCIe slot A (x8 or x16)
+    position: Slot A
+  - name: PCIe slot B (x8 or N/A)
+    position: Slot B

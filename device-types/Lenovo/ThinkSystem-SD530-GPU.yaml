@@ -1,0 +1,17 @@
+---
+# Status: WIP, alpha
+manufacturer: Lenovo
+model: ThinkSystem SD530 GPU Tray
+slug: lenovo-thinksystem-sd530-gpu
+part_number: 4M17A09509
+u_height: 0
+is_full_depth: false
+weight: 16.6 # estimated, matching node weight
+weight_unit: lb
+subdevice_role: child
+# description: GPU tray for ThinkSystem D2 chassis
+comments: |
+  Documentation
+
+  - Lenovo Press
+    - [Product Guide](https://lenovopress.lenovo.com/lp1041-thinksystem-sd530-server-xeon-sp-gen-2)

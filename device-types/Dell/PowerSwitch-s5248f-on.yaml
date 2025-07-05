@@ -4,8 +4,16 @@ model: PowerSwitch S5248F-ON
 slug: dell-powerswitch-s5248f-on
 u_height: 1
 is_full_depth: true
+# airflow: rear-to-front and front-to-rear available
+weight: 21.4
+weight_unit: lb
+# description:
 front_image: true
-comments: '[dell_emc_networking-s5200_on_spec_sheet.pdf](https://www.delltechnologies.com/asset/en-in/products/networking/technical-support/dell_emc_networking-s5200_on_spec_sheet.pdf)'
+comments: |
+  Documentation
+
+  - [Product Support page](https://www.dell.com/support/home/en-us/product-support/product/networking-s5248f-on/overview)
+  - [Dell PowerSwitch S5200-ON Series Switches Specification Sheet](https://www.delltechnologies.com/asset/en-us/products/networking/technical-support/dell_emc_networking-s5200_on_spec_sheet.pdf) PDF
 console-ports:
   - name: Console
     type: rj-45
@@ -131,6 +139,6 @@ interfaces:
     type: 100gbase-x-qsfp28
   - name: Ethernet 1/1/56
     type: 100gbase-x-qsfp28
-  - name: mgmt 1/1/1
+  - name: Management 1/1/1
     type: 1000base-t
     mgmt_only: true

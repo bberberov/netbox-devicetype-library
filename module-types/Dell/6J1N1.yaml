@@ -1,0 +1,10 @@
+---
+# Status: WIP, alpha
+manufacturer: Dell
+model: Intel E810-XXV Dual Port 10/25GbE PCIe Low Profile Ethernet Adapter
+part_number: 6J1N1
+interfaces:
+  - name: '{module}: Intel E810-XXV port 1'
+    type: 25gbase-x-sfp28
+  - name: '{module}: Intel E810-XXV port 2'
+    type: 25gbase-x-sfp28

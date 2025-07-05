@@ -2,46 +2,50 @@
 manufacturer: Lenovo
 model: ThinkSystem SR650 V2
 slug: lenovo-thinksystem-sr650-v2
-part_number: 7Z7x
+part_number: 7Z73
 u_height: 2
 is_full_depth: true
-comments: '[Lenovo System SR650 V2 product guide](https://lenovopress.lenovo.com/lp1392.pdf)'
-subdevice_role: parent
 airflow: front-to-rear
-weight: 38.8
-weight_unit: kg
+weight: 85.5
+weight_unit: lb
+# description: Lenovo ThinkSystem SR650 V2 Server
+comments: |
+  Documentation
+
+  - Lenovo Press
+    - [Product Guide](https://lenovopress.lenovo.com/lp1392-thinksystem-sr650-v2-server)
 interfaces:
   - name: XCC
     type: 1000base-t
     mgmt_only: true
 module-bays:
-  - name: PSU-1
+  - name: Power Supply 1
     position: PSU-1
-  - name: PSU-2
+  - name: Power Supply 2
     position: PSU-2
-  - name: OCP slot 1
+  - name: OCP Slot (OCP 3.0)
     position: OCP-1
-  - name: Riser 1 - PCIe slot 1
+  - name: Riser 1 - PCIe slot 1 (x8, x16 or N/A)
     position: PCIe-1
     label: 1 PCIe
-  - name: Riser 1 - PCIe slot 2
+  - name: Riser 1 - PCIe slot 2 (x8, x16 or N/A)
     position: PCIe-2
     label: 2 PCIe
-  - name: Riser 1 - PCIe slot 3
+  - name: Riser 1 - PCIe slot 3 (x8, x16 or N/A)
     position: PCIe-3
     label: 3 PCIe
-  - name: Riser 2 - PCIe slot 4
+  - name: Riser 2 - PCIe slot 4 (x8, x16 or N/A)
     position: PCIe-4
     label: 4 PCIe
-  - name: Riser 2 - PCIe slot 5
+  - name: Riser 2 - PCIe slot 5 (x8, x16 or N/A)
     position: PCIe-5
     label: 5 PCIe
-  - name: Riser 2 - PCIe slot 6
+  - name: Riser 2 - PCIe slot 6 (x8, x16 or N/A)
     position: PCIe-6
     label: 6 PCIe
-  - name: Riser 3 - PCIe slot 7
+  - name: Riser 3 - PCIe slot 7 (x8 or x16)
     position: PCIe-7
     label: 7 PCIe
-  - name: Riser 3 - PCIe slot 8
+  - name: Riser 3 - PCIe slot 8 (x8 or x16)
     position: PCIe-8
     label: 8 PCIe

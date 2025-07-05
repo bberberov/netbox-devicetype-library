@@ -1,0 +1,17 @@
+---
+# Status: WIP, alpha
+manufacturer: Dell
+model: Chassis Management Controller (CMC) for PowerEdge M1000e
+part_number: NC5NP
+comments: |
+  for PowerEdge M1000e
+console-ports:
+  - name: 'CMC {module} serial port'
+    type: de-9
+interfaces:
+  - name: 'CMC {module} port'
+    label: Gb
+    type: 1000base-t
+  - name: 'CMC {module} stacking port'
+    label: STK
+    type: 1000base-t

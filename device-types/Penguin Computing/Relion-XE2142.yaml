@@ -1,0 +1,29 @@
+---
+# Status: WIP, alpha
+manufacturer: Penguin Computing
+model: Relion XE2142
+slug: penguin-computing-relion-xe2142
+u_height: 0
+is_full_depth: false
+# weight:
+# weight_unit:
+subdevice_role: child
+# description: Node for Relion XE2142 chassis
+comments: |
+  Documentation
+
+  Same as Gigabyte H261-N80
+
+  - [Product page](https://www.gigabyte.com/Enterprise/High-Density-Server/H261-N80-rev-100-A00-B00)
+interfaces:
+  - name: 10G port 1
+    type: 10gbase-t
+  - name: 10G port 2
+    type: 10gbase-t
+  - name: BMC
+    type: 1000base-t
+    mgmt_only: true
+module-bays:
+  - name: LP PCIe x8 slot
+  - name: LP PCIe x16 slot
+  - name: OCP 3.0 mezzanine slot (x16)

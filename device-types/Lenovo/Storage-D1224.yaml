@@ -1,0 +1,31 @@
+---
+# Status: WIP, alpha
+manufacturer: Lenovo
+model: Storage D1224
+slug: lenovo-storage-d1224
+part_number: 4587A31
+u_height: 2
+is_full_depth: true
+airflow: front-to-rear
+weight: 52.9
+weight_unit: lb
+description: Lenovo Storage D1224 SFF Chassis
+comments: |
+  Documentation
+
+  - Lenovo Press
+    - [Product Guide](https://lenovopress.lenovo.com/lp0512-lenovo-storage-d1212-d1224-drive-enclosures)
+power-ports:
+  - name: PS1
+    type: iec-60320-c14
+    maximum_draw: 580
+  - name: PS2
+    type: iec-60320-c14
+    maximum_draw: 580
+interfaces:
+  - name: ESM A Management
+    type: 1000base-t
+    mgmt_only: true
+  - name: ESM B Management
+    type: 1000base-t
+    mgmt_only: true

@@ -2,14 +2,20 @@
 manufacturer: Dell
 model: PowerEdge C6400
 slug: dell-poweredge-c6400
+# part_number:
 u_height: 2.0
 is_full_depth: true
 subdevice_role: parent
-weight: 45
-weight_unit: kg
+# Heaviest variant, 3.5" bays
+weight: 96.16
+weight_unit: lb
 airflow: front-to-rear
+# description: 4-node chassis for C6420 nodes
 comments: |
-  [Dell C6420 Spec Sheet](https://i.dell.com/sites/csdocuments/Product_Docs/en/poweredge-c6400-c6420-technical-guide.pdf)
+  Documentation
+
+  - [Product Support page](https://www.dell.com/support/home/en-us/product-support/product/poweredge-c6400/overview)
+  - [Dell EMC PowerEdge C6400 Technical Specifications](https://www.dell.com/support/manuals/en-us/poweredge-c6400/pec6400_ts_pub/technical-specifications)
 device-bays:
   - name: '1'
     label: Sled 1
@@ -20,7 +26,7 @@ device-bays:
   - name: '4'
     label: Sled 4
 module-bays:
-  - name: Power 1
+  - name: PSU1
     position: '1'
-  - name: Power 2
+  - name: PSU2
     position: '2'

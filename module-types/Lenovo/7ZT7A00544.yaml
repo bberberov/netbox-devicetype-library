@@ -1,0 +1,10 @@
+---
+# Status: WIP, alpha
+manufacturer: Lenovo
+model: ThinkSystem 1Gb 2-port RJ45 LOM Ethernet Adapter
+part_number: 7ZT7A00544
+interfaces:
+  - name: '{module}: Intel X722 port 1'
+    type: 1000base-t
+  - name: '{module}: Intel X722 port 2'
+    type: 1000base-t

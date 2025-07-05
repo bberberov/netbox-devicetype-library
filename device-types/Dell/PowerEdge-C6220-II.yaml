@@ -1,0 +1,27 @@
+---
+# Status: WIP, alpha
+manufacturer: Dell
+model: PowerEdge C6220 II
+slug: dell-poweredge-c6220-ii
+u_height: 0
+is_full_depth: false
+# Separate node and chassis weights not documented. Full chassis weight used in chassis model
+# weight:
+# weight_unit:
+subdevice_role: child
+description: Node for PowerEdge C6220 chassis
+comments: |
+  Documentation
+
+  - [Product Support page](https://www.dell.com/support/home/en-us/product-support/product/poweredge-c6220-2/overview)
+interfaces:
+  - name: Gig-E 1
+    type: 1000base-t
+  - name: Gig-E 2
+    type: 1000base-t
+  - name: iDRAC
+    type: 1000base-t
+    mgmt_only: true
+module-bays:
+  - name: Mezzanine Slot
+  - name: LP PCIe x16 Slot

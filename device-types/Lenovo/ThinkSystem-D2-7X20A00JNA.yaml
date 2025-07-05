@@ -1,0 +1,53 @@
+---
+# Status: WIP, alpha
+manufacturer: Lenovo
+model: ThinkSystem D2 - 7X20A00JNA
+slug: lenovo-thinksystem-d2-7x20a00jna
+part_number: 7X20A00JNA
+u_height: 2
+is_full_depth: true
+airflow: front-to-rear
+weight: 54.8 # estimated, 121.2-4*16.6 from the specifications
+weight_unit: lb
+subdevice_role: parent
+# description: 4-sled chassis for ThinkSystem SD530 nodes and GPU trays
+comments: |
+  Documentation
+
+  - Lenovo Press
+    - [Product Guide](https://lenovopress.lenovo.com/lp1041-thinksystem-sd530-server-xeon-sp-gen-2)
+console-ports:
+  - name: USB Service
+    type: usb-a
+power-ports:
+  - name: PSU0
+    type: iec-60320-c14
+    maximum_draw: 2000
+  - name: PSU1
+    type: iec-60320-c14
+    maximum_draw: 2000
+interfaces:
+  - name: 'Backplane: to Node 1 XCC'
+    type: 1000base-kx
+  - name: 'Backplane: to Node 2 XCC'
+    type: 1000base-kx
+  - name: 'Backplane: to Node 3 XCC'
+    type: 1000base-kx
+  - name: 'Backplane: to Node 4 XCC'
+    type: 1000base-kx
+  - name: SMM Bridge
+    type: bridge
+  - name: SMM Interface
+    type: virtual
+    mgmt_only: true
+  - name: SMM Port
+    label: SMM
+    type: 1000base-t
+device-bays:
+  - name: Sled 1
+  - name: Sled 2
+  - name: Sled 3
+  - name: Sled 4
+module-bays:
+  - name: EIOM
+    label: Ethernet I/O Module

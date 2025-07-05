@@ -1,0 +1,31 @@
+---
+# Status: WIP, alpha
+manufacturer: Lenovo
+model: Storage D3284
+slug: lenovo-storage-d3284
+part_number: 6413
+u_height: 5
+is_full_depth: true
+airflow: front-to-rear
+weight: 288.8
+weight_unit: lb
+description: Lenovo Storage D3284 High Density Expansion Enclosure
+comments: |
+  Documentation
+
+  - Lenovo Press
+    - [Product Guide](https://lenovopress.lenovo.com/lp0513-lenovo-storage-d3284-external-high-density-drive-expansion-enclosure)
+power-ports:
+  - name: PS1
+    type: iec-60320-c20
+    maximum_draw: 2214
+  - name: PS2
+    type: iec-60320-c20
+    maximum_draw: 2214
+interfaces:
+  - name: ESM A Management
+    type: 1000base-t
+    mgmt_only: true
+  - name: ESM B Management
+    type: 1000base-t
+    mgmt_only: true

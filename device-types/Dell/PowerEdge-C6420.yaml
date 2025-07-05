@@ -6,13 +6,24 @@ u_height: 0
 is_full_depth: true
 subdevice_role: child
 airflow: front-to-rear
-weight: 5
-weight_unit: kg
+# Separate node and chassis weights not documented. Full chassis weight used in chassis model
+# weight:
+# weight_unit:
+# description: Node for PowerEdge C6400 chassis
 comments: |
-  [Dell C6420 Spec Sheet](https://i.dell.com/sites/csdocuments/Product_Docs/en/poweredge-c6400-c6420-technical-guide.pdf)
+  Documentation
+
+  - [Product Support page](https://www.dell.com/support/home/en-us/product-support/product/poweredge-c6420/overview)
+  - [Dell EMC PowerEdge C6420 Technical Specifications](https://www.dell.com/support/manuals/en-us/poweredge-c6420/pec6420__ts_pub/technical-specifications)
 interfaces:
-  - name: Gig-E 1
+  - name: Ethernet Port
     type: 1000base-t
+  - name: Gig-E
+    type: other
   - name: iDRAC
-    type: 1000base-t
+    type: other
     mgmt_only: true
+module-bays:
+  - name: OCP Type 1 Slot
+  - name: Mezzanine Slot
+  - name: LP PCIe x16 Slot

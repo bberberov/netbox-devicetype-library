@@ -1,0 +1,28 @@
+---
+# Status: WIP, alpha
+manufacturer: Dell
+model: PowerEdge C6220 chassis
+slug: dell-poweredge-c6220-chassis
+# part_number:
+u_height: 2
+is_full_depth: true
+airflow: front-to-rear
+# Heaviest variant, 3.5" bays
+weight: 90.38
+weight_unit: lb
+subdevice_role: parent
+description: 4-sled chassis for PowerEdge C6220 and C6220 II nodes
+comments: |
+  Documentation
+
+  - [Product Support page](https://www.dell.com/support/home/en-us/product-support/product/poweredge-c6220/overview)
+device-bays:
+  - name: Sled 1
+  - name: Sled 2
+  - name: Sled 3
+  - name: Sled 4
+module-bays:
+  - name: PSU1
+    position: '1'
+  - name: PSU2
+    position: '2'

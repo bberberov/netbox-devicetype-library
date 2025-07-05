@@ -1,0 +1,32 @@
+---
+# Status: WIP, alpha
+manufacturer: Gigabyte
+model: H261-N80 chassis
+slug: gigabyte-h261-n80-chassis
+is_full_depth: true
+airflow: front-to-rear
+u_height: 2
+weight: 35 # Weight of a loaded chassis according to specifications
+weight_unit: kg
+subdevice_role: parent
+description: 4-sled chassis for H261-N80 nodes
+comments: |
+  Documentation
+
+  - [Product page](https://www.gigabyte.com/Enterprise/High-Density-Server/H261-N80-rev-100-A00-B00)
+power-ports:
+  - name: PS1
+    type: iec-60320-c20
+    maximum_draw: 2200
+  - name: PS2
+    type: iec-60320-c20
+    maximum_draw: 2200
+interfaces:
+  - name: CMC
+    type: 1000base-t
+    mgmt_only: true
+device-bays:
+  - name: Sled 1
+  - name: Sled 2
+  - name: Sled 3
+  - name: Sled 4

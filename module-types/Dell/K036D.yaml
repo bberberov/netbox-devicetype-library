@@ -1,0 +1,11 @@
+---
+# Status: WIP, alpha
+manufacturer: Dell
+model: Avocent Integrated KVM Analog Switch Module
+part_number: 0664CN
+comments: |
+  for PowerEdge M1000e
+console-ports:
+  - name: Analog Console Interface (ACI) port
+    label: A
+    type: rj-45

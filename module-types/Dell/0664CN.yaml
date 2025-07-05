@@ -1,0 +1,12 @@
+---
+# Status: WIP, alpha
+manufacturer: Dell
+model: S4100, AC Power Supply, PSU to IO Panel Airflow
+part_number: 0664CN
+description: Dell PowerSwitch S4100-ON Series PSU
+comments: |
+  for S4128F-ON, S4128T-ON, S4148F-ON or S4148T-ON
+power-ports:
+  - name: '{module}'
+    type: iec-60320-c14
+    maximum_draw: 550
